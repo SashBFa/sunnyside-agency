@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap');
+// font-family: 'Barlow', sans-serif;
+// font-family: 'Fraunces', serif;
+
+
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100vh auto calc(100vh - 100vw);
+    color: $nColor-blue-dark-grayish-very;
+}
