@@ -1,0 +1,121 @@
+@media screen and (min-width: 960px){
+    *{
+        font-size: 80%;
+    }
+    .header{
+        background: url("../images/desktop/image-header.jpg") no-repeat bottom/cover;
+        &__title{
+            margin-bottom: 20rem;
+            font-size: 4rem;
+        }
+    }
+    .nav{
+        height: 5rem;
+        margin: 2rem 0;
+        &__icon{
+            display: none;
+        }
+        &__box{
+            position: relative;
+            padding: 0;
+            width: 40rem;
+            height: 5rem;
+            opacity: 1;
+            clip-path: none;
+            background: transparent;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            box-shadow: none;
+        }
+        &__item{
+            color: $nColor-white;
+            &:hover{
+                color: $nColor-white;
+                text-shadow: $shaw;
+                @include fontS(1.5);
+            }
+        }
+        &__branch{
+            
+            &:hover{
+            background: #6ECFFB;
+            margin: 0;
+            padding: 1rem 2rem;
+            }
+        }
+    }
+    #toggle{
+        display: none;
+    }
+    @keyframes slide-bottom {
+        0% {
+        -webkit-transform: translateY(-300%);
+                transform: translateY(-300%);
+                opacity: 0;
+        }
+        50% {
+            -webkit-transform: translateY(0%);
+                    transform: translateY(0%);
+                    opacity: 1;
+        }
+        100% {
+        -webkit-transform: translateY(300%);
+                transform: translateY(300%);
+                opacity: 0;
+        }
+    }
+    .grid{
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50vw 50vw auto;
+        grid-template-areas: 
+        "b a"
+        "c d"
+        "e f";
+
+        &__article{
+            &:nth-child(1){
+                grid-area: a;
+            }
+            &:nth-child(2){
+                grid-area: b;
+            }
+            &:nth-child(3){
+                grid-area: c;
+            }
+            &:nth-child(4){
+                grid-area: d;
+            }
+            &:nth-child(5){
+                grid-area: e;
+                background: url(./../images/desktop/image-graphic-design.jpg) no-repeat center/cover;
+            }
+            &:nth-child(6){
+                grid-area: f;
+                background: url(./../images/desktop/image-photography.jpg) no-repeat center/cover;
+            }
+        }
+        &__img, picture{
+            height: 100%;
+        }
+        &__p{
+            &--text{
+                margin: 0rem; 
+                text-align: left;
+                @include fontS(1);
+            }
+            &--textImg{
+                margin: 6rem;
+            }   
+        }
+        &__button{
+            margin: 0;
+        }
+        &__title{
+            &--text{
+            @include fontS(3.6);
+            text-align: left;
+            }
+        }
+    }
+}

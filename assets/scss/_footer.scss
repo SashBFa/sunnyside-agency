@@ -1,58 +1,31 @@
 .footer{
     height: calc(100vh - 100vw);
     background-color: #90D4C5;
-    display: grid;
+    @include flexC;
     &__box{
         list-style: none;
-        display: flex;
-        justify-content: space-around;
+        @include flexH;
         padding: 0;
+        width: calc(100% - 2 * 3rem);
     }
     &__item{
         text-decoration: none;
         color: $pColor-blue-dark;
+        @include fontS;
+        text-shadow: $shaw4;
     }
     &__links{
         list-style: none;
-        display: flex;
-        justify-content: space-around;
+        @include flexHA;
         padding: 0;
-        margin: 15% 5%;
+        margin: 5rem 3rem;
+        @include fontS;
+        width: calc(100% - 2 * 3rem);
+        filter: drop-shadow($shaw4);
     }
     &__logo{
-        margin: 15% auto 5% auto;
-        width: 50%;
-    }
-}
-@media screen and (min-width: 1000px){
-    .footer{
-        height:25rem;
-        background-color: #90D4C5;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        justify-content: center;
-        align-items: center;
-        align-content: center;
-        &__box{
-            width: 20rem;
-            justify-content: space-between;
-            padding: 0;
-            margin: 0 auto;
-        }
-        &__item{
-            text-decoration: none;
-            color: $pColor-blue-dark;
-        }
-        &__links{
-            width: 15rem;
-            justify-content: space-between;
-            padding: 0;
-            margin:5rem;
-        }
-        &__logo{
-            margin: 3rem auto;
-            width: 10%;
-        }
+        margin: 5rem auto 3rem auto;
+        width: 15rem;
+        filter: drop-shadow($shaw4);
     }
 }

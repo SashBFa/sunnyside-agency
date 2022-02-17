@@ -9,3 +9,9 @@ $nColor-blue-dark-grayish-very:hsl(213, 9%, 39%);
 $nColor-blue-dark-grayish:hsl(232, 10%, 55%);
 $nColor-blue-grayish:hsl(210, 4%, 67%);
 $nColor-white: hsl(0, 0%, 100%);
+
+$shaw: 0.05rem 0.05rem 0.1rem $nColor-blue-dark-desature-very;
+$shaw1: 0.05rem 0.05rem 0.1rem $nColor-blue-dark-grayish-very;
+$shaw2: 0.05rem 0.05rem 0.1rem $nColor-blue-dark-grayish;
+$shaw3: 0.05rem 0.05rem 0.1rem $nColor-blue-grayish;
+$shaw4: 0.05rem 0.05rem 0.1rem $nColor-white;

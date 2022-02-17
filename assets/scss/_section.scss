@@ -4,50 +4,53 @@
         width: 100%;
     }
     &__title{
-        margin: 0;
         font-family: 'Fraunces', serif;
-        font-size: 2rem;
+        @include fontS(3.6);
         font-weight: 800;
         text-align: center;
         color:$nColor-blue-dark-desature-very;
+        text-shadow: $shaw3;
+        &--textImg{
+            margin: 60vh 0 0 0;
+        }
     }
     &__p{
-        font-size: 1rem;
+        @include fontS;
         text-align: center;
-        margin: 10% auto;
+        margin: 2rem 0;
+        letter-spacing: 0.08rem;
+        text-shadow: $shaw3;
     }
     &__button{
         position: relative;
-        font-size: 1rem;
+        @include fontS;
         border:0;
         background: none;
         font-family: 'Fraunces', serif;
         text-transform: uppercase;
-        margin: 0 auto;
+        margin: 2rem auto;
         color:$nColor-blue-dark-desature-very;
+        text-shadow: $shaw3;
         &:before{
             content: " ";
             position: absolute;
             z-index: -1;
-            height: 0.5rem;
-            width: 8rem;
+            height: 0.8rem;
+            width: 14rem;
             border-radius: 50rem;
-            left: -0.1rem;
+            left: -0.6rem;
             bottom: 0;
             opacity: 0.5;
         }
     }
     &__article{
-        display:flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        align-items: center;
+        @include flexC;
         &--text{
-            margin: 10%;
+            margin: 3rem;
         }
         &--textImg{
             height: 100vh;
-            padding:0 5%;
+            padding: 0 3rem;
         }
         &:nth-child(2){
             button:before{
@@ -70,158 +73,52 @@
 
 
 .client{
+    margin: 6rem auto;
     display:grid;
     grid-template-rows: 4rem 1fr 1fr 1fr;
-    text-align: center;
     &__article{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        @include flexC;
+        margin: 3rem;
     }
     &__title{
-        margin: 10% auto;
+        margin: auto;
         text-transform: uppercase;
         font-family: 'Fraunces', serif;
         font-weight: 600;
         color: $nColor-blue-grayish;
-        font-size: 1rem;
+        @include fontS;
         letter-spacing: 0.3rem;
     }
     &__img{
-        border-radius: 100%;
-        height: 30%;
+        border-radius: 50rem;
+        height: 7rem;
     }
     &__p{
-        margin: 5%;
-        font-size: 1rem;
+        margin: 3rem auto;
+        letter-spacing: 0.08rem;
+        @include fontS;
         font-weight: 800;
+        text-align: center;
     }
     &__name{
         font-family: 'Fraunces', serif;
         font-weight: 600;
         color: $nColor-blue-dark-desature-very;
         margin: 0;
+        @include fontS;
     }
     &__function{
         color:$nColor-blue-grayish;
-        margin: 1rem auto 0 auto;
+        margin: 0.5rem auto;
+        @include fontS;
     }
 }
 
 .gallery{
-    width: 100%;
     height: 100vw;
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 50vw 50vw;
     &__img, picture{
         height: 50vw;
-    }
-}
-
-
-@media screen and (min-width: 1000px){
-    .grid{
-        grid-template-columns: 50% 50%;
-        grid-template-areas: 
-        "b a"
-        "c d"
-        "e f";
-
-        &__article:nth-child(1){
-            grid-area: a;
-        }
-        &__article:nth-child(2){
-            grid-area: b;
-            
-        }
-        &__article:nth-child(3){
-            grid-area: c;
-            
-        }
-        &__article:nth-child(4){
-            grid-area: d;
-            
-        }
-        &__article:nth-child(5){
-            grid-area: e;
-            height: 600px;
-            background: url(./../images/desktop/image-graphic-design.jpg) no-repeat center/cover;
-        }
-        &__article:nth-child(6){
-            grid-area: f;
-            height: 600px;
-            background: url(./../images/desktop/image-photography.jpg) no-repeat center/cover;
-        }
-        &__img, picture{
-            height: 100%;
-        }
-        &__p--text{
-            text-align: left;
-            margin: 10% auto;
-        }
-        &__p--textImg{
-            margin: 3rem 8rem;
-        }
-        &__article--text{
-            justify-content: center;
-            align-items: flex-start;
-            margin: 10rem;
-            text-align: left;
-        }
-        &__button{
-            margin: 0;
-        }
-        &__title--text{
-            text-align: left;
-        }
-    }
-    .client{
-        width: 80%;
-        margin:0 auto;
-        grid-template-rows: 15rem auto;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-areas: 
-        "ctit ctit ctit"
-        "b2 b3 b1";
-        &__article{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            &:nth-child(1){
-                grid-area: b1;
-            }
-            &:nth-child(2){
-                grid-area: b2;
-            }
-            &:nth-child(3){
-                grid-area: b3;
-            }
-        }
-        &__title{
-            grid-area: ctit;
-            margin: 10rem auto;
-        }
-        &__img{
-            height: 5rem;
-            margin: 3rem;
-        }
-        &__name{
-            margin: 3rem auto 0 auto;
-        }
-        &__function{
-            margin: 1rem auto 10rem auto;
-        }
-    }
-    .gallery{
-        width: 1440px;
-        height: 30rem;
-        display: grid;
-        overflow: hidden;
-        grid-template-columns: repeat(4, 25%);
-        &__img, picture{
-            height: 30rem;
-        }
     }
 }

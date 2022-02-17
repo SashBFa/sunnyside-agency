@@ -1,0 +1,30 @@
+@media screen and (min-width: 720px){
+    .nav{
+        &__box{
+            width: calc(100% - 2 * 12rem);
+        }
+    }
+    .grid{
+        &__article{
+            &--text{
+                @include fontS(2.5);
+            }
+        }
+        &__p{
+            &--text{
+                margin: 6rem;
+            }
+            &--textImg{
+                margin: 6rem;
+            }
+        }
+    }
+    .footer{
+        &__box{ 
+        width: calc(100% - 2 * 12rem);
+        }
+        &__links{ 
+            width: calc(100% - 2 * 12rem);
+        }
+    }
+}

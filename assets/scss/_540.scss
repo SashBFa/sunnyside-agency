@@ -1,0 +1,33 @@
+@media screen and (min-width: 540px){
+    .nav{
+        &__box{
+            width: calc(100% - 2 * 6rem);
+        }
+    }
+    .grid{
+        &__article{
+            &--text{
+                min-height: 48rem;
+                @include fontS(2.1);
+            }
+        }
+        &__p{
+            &--text{
+                margin: 3rem;
+            }
+        }
+    }
+    .client{
+        &__p{
+            margin: 3rem;
+        }
+    }
+    .footer{
+        &__box{ 
+        width: calc(100% - 2 * 6rem);
+        }
+        &__links{ 
+            width: calc(100% - 2 * 6rem);
+            }
+    }
+}
