@@ -24,3 +24,35 @@
         width: 50%;
     }
 }
+@media screen and (min-width: 1000px){
+    .footer{
+        height:25rem;
+        background-color: #90D4C5;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        &__box{
+            width: 20rem;
+            justify-content: space-between;
+            padding: 0;
+            margin: 0 auto;
+        }
+        &__item{
+            text-decoration: none;
+            color: $pColor-blue-dark;
+        }
+        &__links{
+            width: 15rem;
+            justify-content: space-between;
+            padding: 0;
+            margin:5rem;
+        }
+        &__logo{
+            margin: 3rem auto;
+            width: 10%;
+        }
+    }
+}

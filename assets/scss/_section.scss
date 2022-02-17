@@ -118,3 +118,110 @@
         height: 50vw;
     }
 }
+
+
+@media screen and (min-width: 1000px){
+    .grid{
+        grid-template-columns: 50% 50%;
+        grid-template-areas: 
+        "b a"
+        "c d"
+        "e f";
+
+        &__article:nth-child(1){
+            grid-area: a;
+        }
+        &__article:nth-child(2){
+            grid-area: b;
+            
+        }
+        &__article:nth-child(3){
+            grid-area: c;
+            
+        }
+        &__article:nth-child(4){
+            grid-area: d;
+            
+        }
+        &__article:nth-child(5){
+            grid-area: e;
+            height: 600px;
+            background: url(./../images/desktop/image-graphic-design.jpg) no-repeat center/cover;
+        }
+        &__article:nth-child(6){
+            grid-area: f;
+            height: 600px;
+            background: url(./../images/desktop/image-photography.jpg) no-repeat center/cover;
+        }
+        &__img, picture{
+            height: 100%;
+        }
+        &__p--text{
+            text-align: left;
+            margin: 10% auto;
+        }
+        &__p--textImg{
+            margin: 3rem 8rem;
+        }
+        &__article--text{
+            justify-content: center;
+            align-items: flex-start;
+            margin: 10rem;
+            text-align: left;
+        }
+        &__button{
+            margin: 0;
+        }
+        &__title--text{
+            text-align: left;
+        }
+    }
+    .client{
+        width: 80%;
+        margin:0 auto;
+        grid-template-rows: 15rem auto;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "ctit ctit ctit"
+        "b2 b3 b1";
+        &__article{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            &:nth-child(1){
+                grid-area: b1;
+            }
+            &:nth-child(2){
+                grid-area: b2;
+            }
+            &:nth-child(3){
+                grid-area: b3;
+            }
+        }
+        &__title{
+            grid-area: ctit;
+            margin: 10rem auto;
+        }
+        &__img{
+            height: 5rem;
+            margin: 3rem;
+        }
+        &__name{
+            margin: 3rem auto 0 auto;
+        }
+        &__function{
+            margin: 1rem auto 10rem auto;
+        }
+    }
+    .gallery{
+        width: 1440px;
+        height: 30rem;
+        display: grid;
+        overflow: hidden;
+        grid-template-columns: repeat(4, 25%);
+        &__img, picture{
+            height: 30rem;
+        }
+    }
+}
