@@ -1,4 +1,9 @@
 @media screen and (min-width: 720px){
+    .header{
+        &__title{
+            @include fontS(5);
+        }
+    }
     .nav{
         &__box{
             width: calc(100% - 2 * 12rem);

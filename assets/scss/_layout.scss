@@ -9,12 +9,13 @@
     scroll-behavior: smooth;
 }
 body{
-    width: 100%;
-    max-width: 144rem;
+    width: 100vw;
+    overflow-x: hidden;
+    height: 100vh;
 }
 .container{
-    width: 100%;
-    display: grid;
+    max-width: 100%;
+    display: grid;    
     font-family: 'Barlow', sans-serif;
     color: $nColor-blue-dark-grayish-very;
 }
