@@ -220,6 +220,7 @@ body {
   color: #23303e;
   text-shadow: 0.05rem 0.05rem 0.1rem #a7abae;
   cursor: pointer;
+  text-decoration: none;
   letter-spacing: 0.07em;
 }
 .grid__article:nth-child(2) .portfolio-experiment a .text {
@@ -326,6 +327,7 @@ body {
   color: #23303e;
   text-shadow: 0.05rem 0.05rem 0.1rem #a7abae;
   cursor: pointer;
+  text-decoration: none;
   letter-spacing: 0.07em;
 }
 .grid__article:nth-child(4) .portfolio-experiment a .text {
