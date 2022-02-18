@@ -12,7 +12,7 @@
         text-transform: uppercase;
         text-align: center;
         text-shadow: $shaw;
-        transition-duration: 1s;
+        animation: slide-title 2s;
     }
     &__arrow{
         filter: drop-shadow($shaw);
@@ -105,5 +105,30 @@
       -webkit-transform: translateY(300%);
               transform: translateY(300%);
               opacity: 0;
+    }
+}
+
+@-webkit-keyframes slide-title {
+    0% {
+        -webkit-transform: translateY(-100%);
+                transform: translateY(-100%);
+                opacity: 0;
+      }
+      100% {
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+                opacity: 1;
+    }
+}
+@keyframes slide-title {
+    0% {
+      -webkit-transform: translateY(-100%);
+              transform: translateY(-100%);
+              opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+              opacity: 1;
     }
 }

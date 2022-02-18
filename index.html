@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="shortcut icon" href="./assets/images/icons/favicon-32x32.png">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>SunnySide</title>
 </head>
 <body>
@@ -46,7 +47,7 @@
                     </picture>
                 </article>
 
-                <article class="grid__article grid__article--text">
+                <article data-aos="fade-right" data-aos-duration="2000" class="grid__article grid__article--text">
                     <h3 class="grid__title grid__title--text">Transform your brand</h3>
                     <p class="grid__p grid__p--text">
                         We are a full-service creative agency specializing in helping brands grow fast.
@@ -63,7 +64,7 @@
                     </picture>
                 </article>
 
-                <article class="grid__article grid__article--text">
+                <article data-aos="fade-left" data-aos-duration="2000" class="grid__article grid__article--text">
                     <h3 class="grid__title grid__title--text">Stand out to the right audience</h3>
                     <p class="grid__p grid__p--text">
                         Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, 
@@ -73,23 +74,23 @@
                 </article>
 
                 <article class="grid__article grid__article--textImg">
-                    <h3 class="grid__title grid__title--textImg">Graphic Design</h3>
-                    <p class="grid__p grid__p--textImg">
+                    <h3 data-aos="fade-up" data-aos-duration="2000" class="grid__title grid__title--textImg">Graphic Design</h3>
+                    <p data-aos="fade-up" data-aos-duration="2000" class="grid__p grid__p--textImg">
                         Great design makes you memorable. We deliver artwork that underscores
                         you brand message and captures potential clients's attention.
                     </p>
                 </article>
 
                 <article class="grid__article grid__article--textImg">
-                    <h3 class="grid__title grid__title--textImg">Photography</h3>
-                    <p class="grid__p grid__p--textImg">
+                    <h3 data-aos="fade-up" data-aos-duration="2000" class="grid__title grid__title--textImg">Photography</h3>
+                    <p data-aos="fade-up" data-aos-duration="2000" class="grid__p grid__p--textImg">
                         Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
                 </article>
             </section>
 
             <section class="main__section client">
                 <h3 class="client__title">client testimonials</h3>
-                <article class="client__article">
+                <article data-aos="zoom-in-down" data-aos-duration="2000" class="client__article">
                     <img class="client__img" src="./assets/images/people/image-emily.jpg" alt="emily">
                     <p class="client__p">
                         We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.
@@ -98,7 +99,7 @@
                     <h5 class="client__function">Marketing Director</h5>
                 </article>
 
-                <article class="client__article">
+                <article data-aos="zoom-in-down" data-aos-duration="2000" class="client__article">
                     <img class="client__img" src="./assets/images/people/image-thomas.jpg" alt="thomas">
                     <p class="client__p">
                         Sunnyside's enthusiasm coupled with their keen interest in our brand's success made it a satisfying and enjoyable experience.
@@ -107,7 +108,7 @@
                     <h5 class="client__function">Chief Operating Officer</h5>
                 </article>
 
-                <article class="client__article">
+                <article data-aos="zoom-in-down" data-aos-duration="2000" class="client__article">
                     <img class="client__img" src="./assets/images/people/image-jennie.jpg" alt="jennie">
                     <p class="client__p">
                         Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
@@ -159,5 +160,9 @@
             </ul>
         </footer>
     </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>
