@@ -21,28 +21,6 @@
         letter-spacing: 0.08rem;
         text-shadow: $shaw3;
     }
-    &__button{
-        position: relative;
-        @include fontS;
-        border:0;
-        background: none;
-        font-family: 'Fraunces', serif;
-        text-transform: uppercase;
-        margin: 2rem auto;
-        color:$nColor-blue-dark-desature-very;
-        text-shadow: $shaw3;
-        &:before{
-            content: " ";
-            position: absolute;
-            z-index: -1;
-            height: 0.8rem;
-            width: 14rem;
-            border-radius: 50rem;
-            left: -0.6rem;
-            bottom: 0;
-            opacity: 0.5;
-        }
-    }
     &__article{
         @include flexC;
         &--text{
@@ -53,14 +31,10 @@
             padding: 0 3rem;
         }
         &:nth-child(2){
-            button:before{
-                background-color: $pColor-yellow;
-            }
+                @include buttonMove($pColor-red-soft);
         }
         &:nth-child(4){
-            button:before{
-                background-color: $pColor-red-soft;
-            }
+                @include buttonMove($pColor-yellow);
         }
         &:nth-child(5){
             background: url(./../images/mobile/image-graphic-design.jpg) no-repeat center/cover;
